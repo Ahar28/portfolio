@@ -4,6 +4,8 @@ import Header from './components/header/Headerjs.jsx';
 import Home from './components/home/Homejs';
 import Aboutjs from './components/about/aboutjs.jsx';
 import Skills from './components/skills/Skillsjs.jsx';
+import Servicesjs from './components/services/Servicesjs.jsx';
+import Qualification from './components/qualification/Qualificationjs.jsx';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
     <Home />
     <Aboutjs />
     <Skills />
+    <Servicesjs />
+    <Qualification />
     </main>
   </>
   );
