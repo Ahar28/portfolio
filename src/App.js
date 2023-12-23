@@ -18,7 +18,7 @@ function App() {
     <Home />
     <Aboutjs />
     <Skills />
-    <Servicesjs />
+    {/* <Servicesjs /> */}
     <Qualification />
     <Contact />
     </main>

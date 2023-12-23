@@ -1,6 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect }  from 'react';
 
 const Data = () => {
+  const [subtitleIndex, setSubtitleIndex] = useState(0);
+  const subtitles = [
+    'Software Developer',
+    'Full Stack Developer',
+    'Java Developer',
+    'Cloud Computing Enthusiast',
+    'React Enthusiast',
+    // Add more subtitle texts as needed
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setSubtitleIndex((prevIndex) => (prevIndex + 1) % subtitles.length);
+    }, 1500); // Change the interval duration as needed (in milliseconds)
+
+    return () => clearInterval(intervalId);
+  }, []); // Empty dependency array to run the effect only once on mount
+
+
   return (
     <div className="home__data">
         <h1 className="home__title">Aharnish Solanki
@@ -53,11 +72,13 @@ const Data = () => {
                     fill="#EBA352"
                   ></path>
                 </svg></h1>
-                <h3 className="home__subtitle">Software Developer</h3>
+                <h3 className="home__subtitle">{subtitles[subtitleIndex]}</h3>
+                {/* <h3 className="home__subtitle">Software Developer</h3> */}
                 <p className="home__description">Hi, I am Aharnish Solanki</p>
                 <a href="#contact" className="button button--flex">
-                    Say Hello
-                    <svg
+                    Say Hello {"   "}
+                    <i class='bx bxs-send bx-flip-horizontal bx-tada' style={{ marginLeft: '10px' }}></i>
+                    {/* <svg
                   class="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -73,7 +94,7 @@ const Data = () => {
                     d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"
                     fill="var(--container-color)"
                   ></path>
-                </svg>
+                </svg> */}
                 </a>
     </div>
   )

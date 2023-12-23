@@ -14,10 +14,12 @@ const Aboutjs = () => {
             <img src={AboutImg} alt="" className="about__img"  />
             <div className="about_data">
               <Info />
-              <p className="about__description">Frontend Developer Description</p>
+              <p className="about__description">Hello! I'm, a dedicated software developer. I specialize in crafting clean, efficient code and building sleek web applications. With a passion for problem-solving, I thrive in collaborative, dynamic environments. Let's turn your ideas into reality!
+</p>
               <a download="" href={CV} className="button button--flex">
                 Download CV
-                <svg
+                <i class='bx bxs-file'style={{ marginLeft: '10px' }} ></i>
+                {/* <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -41,7 +43,7 @@ const Aboutjs = () => {
                   d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
                   fill="var(--container-color)"
                 ></path>
-              </svg>
+              </svg> */}
               </a>
             </div>
         </div>
