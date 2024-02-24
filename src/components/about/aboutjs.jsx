@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 import AboutImg  from '../../assets/aharabout.jpg';
-import CV from '../../assets/ahar-Cv.pdf';
+import Resume from '../../assets/Aharnish_Resume.pdf';
 import Info from './Info';
 
 const Aboutjs = () => {
@@ -16,8 +16,8 @@ const Aboutjs = () => {
               <Info />
               <p className="about__description">Hello! I'm, a dedicated software developer. I specialize in crafting clean, efficient code and building sleek web applications. With a passion for problem-solving, I thrive in collaborative, dynamic environments. Let's turn your ideas into reality!
 </p>
-              <a download="" href={CV} className="button button--flex">
-                Download CV
+              <a download="" href={Resume} className="button button--flex">
+                Download Resume
                 <i class='bx bxs-file'style={{ marginLeft: '10px' }} ></i>
                 {/* <svg
                 class="button__icon"
