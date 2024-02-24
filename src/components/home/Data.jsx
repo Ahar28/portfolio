@@ -7,17 +7,18 @@ const Data = () => {
     'Full Stack Developer',
     'Java Developer',
     'Cloud Computing Enthusiast',
-    'React Enthusiast',
-    // Add more subtitle texts as needed
+    'React Enthusiast'
   ];
+
+  const subLength = subtitles.length;
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setSubtitleIndex((prevIndex) => (prevIndex + 1) % subtitles.length);
+      setSubtitleIndex((prevIndex) => (prevIndex + 1) % subLength);
     }, 1500); // Change the interval duration as needed (in milliseconds)
 
     return () => clearInterval(intervalId);
-  }, []); // Empty dependency array to run the effect only once on mount
+  }, [subLength]); // Empty dependency array to run the effect only once on mount
 
 
   return (
